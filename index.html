@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>W1JAR</title>
+<meta name="description" content="ASLCP, a web control panel for AllStarLink 3 nodes with native digital voice.">
+<style>
+  :root {
+    --bg: #f6f7f9; --card: #ffffff; --text: #16191d; --muted: #5b6470;
+    --line: #dde1e6; --accent: #1f6feb; --accent-text: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1215; --card: #171b20; --text: #e6e9ed; --muted: #9aa4b0;
+      --line: #262c33; --accent: #4c8dff; --accent-text: #0b0d10;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    min-height: 100vh; display: flex; flex-direction: column;
+  }
+  main { flex: 1; width: 100%; max-width: 720px; margin: 0 auto; padding: 56px 16px 32px; }
+  h1 { font-size: 28px; letter-spacing: .04em; margin: 0 0 4px; }
+  .lead { color: var(--muted); margin: 0 0 40px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 24px;
+  }
+  .card h2 { margin: 0 0 6px; font-size: 22px; }
+  .card p { margin: 0 0 18px; color: var(--muted); }
+  ul { margin: 0 0 20px; padding-left: 20px; color: var(--muted); }
+  li { margin: 2px 0; }
+  .actions { display: flex; flex-wrap: wrap; gap: 10px; }
+  .btn {
+    display: inline-block; padding: 9px 16px; border-radius: 8px; text-decoration: none;
+    font-weight: 600; border: 1px solid var(--line); color: var(--text);
+  }
+  .btn.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-text); }
+  .btn:hover { filter: brightness(1.08); }
+  .btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  footer { color: var(--muted); font-size: 14px; text-align: center; padding: 24px 16px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>W1JAR</h1>
+  <p class="lead">Amateur radio software.</p>
+
+  <section class="card">
+    <h2>ASLCP</h2>
+    <p>A web control panel for AllStarLink 3 nodes, with native digital voice.</p>
+    <ul>
+      <li>Node status, links and audio tuning from the browser</li>
+      <li>Asterisk config editor with diff review, history and rollback</li>
+      <li>DMR, YSF, P25 and NXDN bridging built in</li>
+      <li>Signed apt repository with one-line install</li>
+    </ul>
+    <div class="actions">
+      <a class="btn primary" href="/aslcp/">Install and docs</a>
+      <a class="btn" href="https://github.com/w1jar/aslcp">GitHub</a>
+    </div>
+  </section>
+</main>
+<footer>W1JAR</footer>
+</body>
+</html>
