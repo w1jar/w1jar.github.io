@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>W1JAR</title>
-<meta name="description" content="ASLCP, a web control panel for AllStarLink 3 nodes with native digital voice.">
+<meta name="description" content="nodespot, an all-in-one multi-mode radio node for Raspberry Pi and mini PCs, and ASLCP, a web control panel for AllStarLink 3 nodes.">
 <style>
   :root {
     --bg: #f6f7f9; --card: #ffffff; --text: #16191d; --muted: #5b6470;
@@ -29,7 +29,13 @@
     background: var(--card); border: 1px solid var(--line); border-radius: 12px;
     padding: 24px;
   }
+  .card + .card { margin-top: 20px; }
   .card h2 { margin: 0 0 6px; font-size: 22px; }
+  .tag {
+    display: inline-block; margin-left: 8px; padding: 1px 8px; border-radius: 999px;
+    border: 1px solid var(--line); color: var(--muted); font-size: 13px; font-weight: 600;
+    vertical-align: middle;
+  }
   .card p { margin: 0 0 18px; color: var(--muted); }
   ul { margin: 0 0 20px; padding-left: 20px; color: var(--muted); }
   li { margin: 2px 0; }
@@ -50,7 +56,24 @@
   <p class="lead">Amateur radio software.</p>
 
   <section class="card">
-    <h2>ASLCP</h2>
+    <h2>nodespot <span class="tag">v1.0.0</span></h2>
+    <p>An all-in-one multi-mode radio node for Raspberry Pi and mini PCs. No Asterisk needed.</p>
+    <ul>
+      <li>AllStarLink, EchoLink, DMR (BrandMeister, TGIF), YSF, P25, NXDN and M17 from one web page</li>
+      <li>One radio (SHARI or another SA818 interface), one mode at a time</li>
+      <li>Now calling with callsign lookup, favorites, schedules and backups</li>
+      <li>Guided radio audio tuning with auto-set</li>
+      <li>Signed apt repository with one-line install</li>
+    </ul>
+    <div class="actions">
+      <a class="btn primary" href="/nodespot/">Install</a>
+      <a class="btn" href="https://github.com/w1jar/nodespot/releases/latest">Release notes</a>
+      <a class="btn" href="https://github.com/w1jar/nodespot">GitHub</a>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>ASLCP <span class="tag">Moved to nodespot</span></h2>
     <p>A web control panel for AllStarLink 3 nodes, with native digital voice.</p>
     <ul>
       <li>Node status, links and audio tuning from the browser</li>
@@ -59,7 +82,7 @@
       <li>Signed apt repository with one-line install</li>
     </ul>
     <div class="actions">
-      <a class="btn primary" href="/aslcp/">Install and docs</a>
+      <a class="btn" href="/aslcp/">Install and docs</a>
       <a class="btn" href="https://github.com/w1jar/aslcp">GitHub</a>
     </div>
   </section>
